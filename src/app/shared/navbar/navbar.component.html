@@ -1,0 +1,12 @@
+
+<i class="bi bi-list fs-1" (click)="menuOpen = !menuOpen"></i>
+<nav [class.d-none]="!menuOpen" class="mt-2 ps-2">
+  <ul class="list-unstyled d-flex flex-column gap-2 m-0 p-0">
+    <li (click)="menuOpen = !menuOpen"><a routerLink="/home" class="text-decoration-none">Home</a></li>
+    <li (click)="menuOpen = !menuOpen"><a routerLink="/space-invaders" class="text-decoration-none">Space Invaders</a></li>
+  </ul>
+</nav>
+
+
+
+

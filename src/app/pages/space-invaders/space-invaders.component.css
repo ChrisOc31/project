@@ -1,0 +1,27 @@
+.ship {
+  position: absolute;
+  bottom: 20px;
+  left: 50px;
+  transform: translateX(-50%);
+}
+
+.bullet {
+  position: absolute;
+  width: 5px;
+  height: 20px;
+  background-color: red;
+  bottom: 80px;
+  left: 50%;
+}
+
+.AlienBox .row {
+  margin-bottom: 15px;
+}
+
+.AlienBox {
+  position: fixed;
+  top: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+ 
+}
