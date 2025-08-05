@@ -9,7 +9,7 @@
   position: absolute;
   width: 5px;
   height: 20px;
-  background-color: red;
+  background-color: rgb(253, 4, 4);
   bottom: 80px;
   left: 50%;
 }
