@@ -23,7 +23,7 @@ export class AppComponent {
         const path = event.urlAfterRedirects.split('/')[1] || 'home';
         this.currentRoute = path;
 
-        const hiddenRoutes = ['landing-page']; // adjust as needed
+        const hiddenRoutes = ['landing-page', 'play', 'ableton', 'pairs']; // adjust as needed
         this.showNavbar = !hiddenRoutes.includes(path);
       });
   }
