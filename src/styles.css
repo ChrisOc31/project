@@ -1,6 +1,14 @@
-/* You can add global styles to this file, and also import other style files */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
 .home {
   background-color: pink;
+}
+
+.pairs{
+  background-image: linear-gradient(purple, green);
 }
 
 .space-invaders {
@@ -40,3 +48,4 @@ app-navbar {
   position: relative; /* or 'sticky' or 'fixed' depending on your layout */
   z-index: 1000;       /* higher than your image */
 }
+

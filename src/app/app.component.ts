@@ -10,17 +10,21 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule, RouterOutlet, NavbarComponent],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css']
+  styleUrls: ['./app.component.css'],
 })
 export class AppComponent {
   currentRoute = '';
+  showNavbar = true;
 
   constructor(private router: Router) {
     this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
+      .pipe(filter((event) => event instanceof NavigationEnd))
       .subscribe((event: any) => {
         const path = event.urlAfterRedirects.split('/')[1] || 'home';
         this.currentRoute = path;
+
+        const hiddenRoutes = ['landing-page']; // adjust as needed
+        this.showNavbar = !hiddenRoutes.includes(path);
       });
   }
 }

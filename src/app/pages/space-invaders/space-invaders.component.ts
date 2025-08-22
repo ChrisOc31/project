@@ -18,7 +18,7 @@ export class SpaceInvadersComponent {
   @ViewChildren('alienSvg') alienSvgs!: QueryList<ElementRef>;
 
   ngOnInit() {
-    this.moveAliens();
+    // this.moveAliens();
   }
 
   constructor() {
